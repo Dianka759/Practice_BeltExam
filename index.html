@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Practice BeltExam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--  Navigation -->
+    <div class="nav">
+        <div>
+            <h1> Genshin Impact </h1>
+        </div>
+        <div class="navRight">
+            <h3>Characters</h3>
+            <h3>Weapons</h3>
+            <h3>Artifacts</h3>
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+        <div class="characters">
+            <div class="box" id='lumine' onclick="character('lumine')">
+                <img src="./images/lumine.png" alt="Pic of Lumine">
+                <h4>Lumine</h4>
+            </div>
+            <div class="box" id='hutao' onclick="character('hutao')">
+                <img src="./images/hutao.png" alt="character picture">
+                <h4>Hu Tao</h4>
+            </div>
+            <div class="box" id="fischl" onclick="character('fischl')">
+                <img src="./images/fischl.png" alt="character picture">
+                <h4>Fischl</h4>
+            </div>
+            <div class="box" id='yoimiya' onclick="character('yoimiya')">
+                <img src="./images/yoimiya.png" alt="character picture">
+                <h4>Yoimiya</h4>
+            </div>
+            <div class="box" id='ei' onclick="character('ei')">
+                <img src="./images/ei.png" alt="character picture">
+                <h4>Raiden Shogun (Ei)</h4>
+            </div>
+            <div class="box" id="klee" onclick="character('klee')">
+                <img src="./images/klee.png" alt="character picture">
+                <h4>Klee</h4>
+            </div>
+            <div class="box" id='beidou' onclick="character('beidou')">
+                <img src="./images/beidou.png" alt="character picture">
+                <h4>Beidou</h4>
+            </div>
+            <div class="box" id="ayaka" onclick="character('ayaka')">
+                <img src="./images/ayaka.png" alt="character picture">
+                <h4>Kamisato Ayaka</h4>
+            </div>
+            <div class="box" id="ganyu" onclick="character('ganyu')">
+                <img src="./images/ganyu.png" alt="character picture">
+                <h4>Ganyu</h4>
+            </div>
+        </div>
+
+
+        <div class="middle">
+            <div class="name" id="name" onclick="remove(this)">
+                <p> Choose your character! </p>
+            </div>
+            <div class="picture" onclick="remove(this)">
+                <p>
+                    < </p>
+                        <img src="./images/main.png" alt="Full body sillouete of Lumine" id="picture">
+                        <p> > </p>
+            </div>
+            <div class="description" id="description">
+                <p> random button clicker to practice count functions :D </p>
+                <p id="count"> 0 </p>
+                <button onclick="like()"> Rando Button </button>
+            </div>
+        </div>
+
+
+        <div class="characters">
+            <div class="box" id="aether" onclick="character('aether')">
+                <img src="./images/aether.png" alt="Pic of Lumine">
+                <h4>Aether</h4>
+            </div>
+            <div class="box" id='xiao' onclick="character('xiao')">
+                <img src="./images/Xiao.png" alt="Pic of Xiao">
+                <h4>Xiao</h4>
+            </div>
+            <div class="box" id='venti' onclick="character('venti')">
+                <img src="./images/venti.png" alt="Pic of Venti">
+                <h4>Venti</h4>
+            </div>
+            <div class="box" id="itto" onclick="character('itto')">
+                <img src="./images/itto.png" alt="Pic of Itto">
+                <h4>Itto</h4>
+            </div>
+            <div class="box" id='diluc' onclick="character('diluc')">
+                <img src="./images/diluc.png" alt="character picture">
+                <h4>Diluc</h4>
+            </div>
+            <div class="box" id='kaeya' onclick="character('kaeya')">
+                <img src="./images/kaeya.png" alt="character picture">
+                <h4>Kaeya</h4>
+            </div>
+            <div class="box" id="kazuha" onclick="character('kazuha')">
+                <img src="./images/kazuha.png" alt="character picture">
+                <h4>Kazuha</h4>
+            </div>
+            <div class="box" id='zhongli' onclick="character('zhongli')">
+                <img src="./images/zhongli.png" alt="character picture">
+                <h4>Zhongli</h4>
+            </div>
+            <div class="box" id="chongyun" onclick="character('chongyun')">
+                <img src="./images/chongyun.png" alt="character picture">
+                <h4>Chongyun</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
